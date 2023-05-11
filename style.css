@@ -2,22 +2,29 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-seriff;
+  font-family: "Poppins", sans-serif;
 }
 body {
+width:100%;
 height: 100vh;
 background: rgb(58,74,180);
 background: linear-gradient(90deg, rgba(58,74,180,1) 0%, rgba(29,153,253,1) 50%, rgba(69,241,252,1) 100%);
 }
+.searchBar{
+  padding: 100px 25%;
+  display: flex;
+  flex-direction: column;
+  line-height: 2rem;
+  font-size: 1.2em;
+}
+#fruit{
+   font-size:1.5em;
+   padding: 15px;
+   border-radius: 5px;
+}
 input[type="text"]{
-  background-color: #6666ff;
-  width: 100%;
-  padding: 15px 10px;
-  border: none;
-  border-bottom: 1px solid rgb(100, 89, 121);
-  outline: none;
-  border-radius: 5px 5px 0 0;
-  font-size: 16px;
+  -webkit-transition: width 0.15s ease-in-out;
+   transition: width 0.15s ease-in-out;
 }
 form{
   width: 75vmin;
@@ -28,17 +35,22 @@ form{
   left: 50%;
   padding: 40px 0;
 }
-ul{
-  list-style: none;
+#fruitList {
+  padding: 2px 10%;
+  background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+  border-radius: 10px;
 }
-.list {
-  width: 100%;
-  background-color: #ccccff;
-  border-radius: 0 0 5px 5px;
+.listItem {
+   font-size: 1.4em;
+   display: flex;
+   flex-direction: column;
+   text-decoration: none;
+   padding: 5px 20px;
+   margin: auto;
 }
-.list items {
-  padding: 10px 5px;
-}
-.list:hover {
-  bacgkround-color: blue;
+.listItem:hover{
+ color: #00008B;
+ background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+ border: 1px solid rgba(135, 206, 235, 0.2);
+ border-radius: 3px;
 }
